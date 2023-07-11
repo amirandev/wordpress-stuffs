@@ -12,6 +12,13 @@ global $wpdb;
 $query = "SELECT * FROM $wpdb->posts";
 ```
 
+To retrieve the WordPress database table prefix, you can use the global variable `$wpdb` and its property `prefix`. Here's an example of how to retrieve the prefix:
+
+```php
+global $wpdb;
+$prefix = $wpdb->prefix;
+```
+
 3. Execute the query: To execute the query, use the `$wpdb` object's `get_results()` method. It will return an array of results matching the query.
 
 ```php
